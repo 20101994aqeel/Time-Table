@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:stretchColumns="2" >
+
+        <TableRow >
+            <TextView
+                android:id="@+id/textViewcode"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Code" />
+            <EditText
+                android:id="@+id/editBatchCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <requestFocus />
+            </EditText>
+        </TableRow>
+
+        <TableRow >
+
+            <TextView
+                android:id="@+id/textViewcourse"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Course" />
+
+            <EditText
+                android:id="@+id/editCourse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+            </EditText>
+        </TableRow>
+
+        <TableRow >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Start Date" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="showDatePicker"
+                    android:src="@drawable/datepicker" >
+                </ImageButton>
+
+                <TextView
+                    android:id="@+id/textStartDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="2012-04-24" >
+                </TextView>
+            </LinearLayout>
+        </TableRow>
+        <TableRow >
+
+            <TextView
+                android:id="@+id/textViewnoofclass"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="No. Classes" />
+
+            <EditText
+                android:id="@+id/editClasses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number" >
+            </EditText>
+        </TableRow>
+        <TableRow >
+
+            <TextView
+                android:id="@+id/textViewperiod"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Period (Min)" />
+
+            <EditText
+                android:id="@+id/editPeriod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number" >
+            </EditText>
+        </TableRow>
+
+        <TableRow >
+
+            <TextView
+                android:id="@+id/textViewremark"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Teacher" />
+
+            <EditText
+                android:id="@+id/editRemarks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+            </EditText>
+        </TableRow>
+<TableRow>
+    <CheckBox
+        android:id="@+id/mon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mon" >
+    </CheckBox>
+
+    <EditText
+        android:id="@+id/editmon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="No.of Classes"
+        android:text="1"
+        android:inputType="number" >
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="showTimePickermon"
+            android:src="@drawable/datepicker" >
+        </ImageButton>
+
+        <TextView
+            android:id="@+id/texttimemon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:text="19:00" >
+        </TextView>
+    </LinearLayout>
+</TableRow>
+        <TableRow>
+    <CheckBox
+        android:id="@+id/tue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tue" >
+    </CheckBox>
+
+            <EditText
+                android:id="@+id/edittue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="No.of Classes"
+                android:text="1"
+                android:inputType="number" >
+            </EditText>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="showTimePickertue"
+                    android:src="@drawable/datepicker" >
+                </ImageButton>
+
+                <TextView
+                    android:id="@+id/texttimetue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="19:00" >
+                </TextView>
+            </LinearLayout>
+        </TableRow>
+        <TableRow>
+    <CheckBox
+        android:id="@+id/wed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wed" >
+    </CheckBox>
+
+            <EditText
+                android:id="@+id/editwed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="No.of Classes"
+                android:text="1"
+                android:inputType="number" >
+            </EditText>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="showTimePickerwed"
+                    android:src="@drawable/datepicker" >
+                </ImageButton>
+
+                <TextView
+                    android:id="@+id/texttimewed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="19:00" >
+                </TextView>
+            </LinearLayout>
+        </TableRow>
+        <TableRow>
+            <CheckBox
+                android:id="@+id/thu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thu" >
+            </CheckBox>
+
+            <EditText
+                android:id="@+id/editthu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="No.of Classes"
+                android:text="1"
+                android:inputType="number" >
+            </EditText>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="showTimePickerthu"
+                    android:src="@drawable/datepicker" >
+                </ImageButton>
+
+                <TextView
+                    android:id="@+id/texttimethu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="19:00" >
+                </TextView>
+            </LinearLayout>
+        </TableRow>
+        <TableRow>
+            <CheckBox
+                android:id="@+id/fri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fri" >
+            </CheckBox>
+
+            <EditText
+                android:id="@+id/editfri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="No.of Classes"
+                android:text="1"
+                android:inputType="number" >
+            </EditText>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="showTimePickerfri"
+                    android:src="@drawable/datepicker" >
+                </ImageButton>
+
+                <TextView
+                    android:id="@+id/texttimefri"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="19:00" >
+                </TextView>
+            </LinearLayout>
+        </TableRow>
+        <TableRow>
+            <CheckBox
+                android:id="@+id/sat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sat" >
+            </CheckBox>
+
+            <EditText
+                android:id="@+id/editsat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="No.of Classes"
+                android:text="1"
+                android:inputType="number" >
+            </EditText>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="showTimePickersat"
+                    android:src="@drawable/datepicker" >
+                </ImageButton>
+
+                <TextView
+                    android:id="@+id/texttimesat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="19:00" >
+                </TextView>
+            </LinearLayout>
+        </TableRow>
+        <TableRow >
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="addBatch"
+                android:text="Add Course" >
+            </Button>
+        </TableRow>
+    </TableLayout>
+
+</ScrollView>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="test.codevilla.co.actilifecycle">
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="Class Time Table"
+        android:theme="@style/AppTheme">
+        <activity
+            android:label="Time Table"
+            android:name=".ListBatchesActivity"
+            android:configChanges="orientation|screenSize"
+            >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:label="Add Course"   android:name=".AddBatchActivity" />
+        <activity android:label="List Classes"   android:name=".ListClassesActivity" />
+        <activity android:label="Add Class"   android:name=".AddClassActivity" />
+        <activity android:label="Update Course"   android:name=".UpdateBatchActivity" />
+        <activity android:label="Update Class"   android:name=".UpdateClassActivity" />
+    </application>
+
+
+</manifest>
